@@ -1,4 +1,4 @@
-strs=("sudarshan", "mishra")
+strs=("Manish#", "#manish")
 def encode(strs):
     res=""
     for s in strs:
@@ -8,6 +8,7 @@ def encode(strs):
     return res
 print(encode(strs))
 encoded=encode(strs)
+
 def decode(strs):
     res,i=[],0
     word=""
