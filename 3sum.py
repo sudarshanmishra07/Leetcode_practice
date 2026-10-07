@@ -1,6 +1,6 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
-        nums.sort()
+        nums.sort()         #taking sorted list
         i = 0
         result = []
         while i < len(nums) - 2:
