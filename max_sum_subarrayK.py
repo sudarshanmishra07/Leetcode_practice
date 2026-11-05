@@ -1,8 +1,11 @@
 class Solution:
+    def maxSubarraySum(self, arr, k):
+        # code here 
+        n = len(arr)                                            #find length of array
     def maxSubarraySum(self, arr, k): 
         n = len(arr)
         if n < k:
-                print("Invalid")
+                print("Invalid")                                
                 return -1
         window_sum = sum(arr[:k])                            #calculate sum of first window
         max_sum = window_sum
