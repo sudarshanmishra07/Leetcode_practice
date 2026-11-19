@@ -4,6 +4,6 @@ class Solution:
         b=1
         c=1
         while a+b+c<n:
-            a,b,c = b,c,b+c
+            a,b,c = b,c,b+c     #update to next fibonacci numbers
         
-        return a+b+c==n
+        return a+b+c==n         #check if sum equals
