@@ -8,12 +8,12 @@ class Solution:
                 return mid                      #if mid = target return mid
             if nums[l]<=nums[mid]:              #check if left half is sorted
                 if nums[l]<=target<nums[mid]:   #check if target in left sorted half
-                    r = mid-1                   
+                    r = mid-1                   #find in left half                
                 else:
-                     l = mid+1
+                     l = mid+1                  #find in right half
             else:
                 if nums[mid]<target<=nums[r]:   #check if target in right sorted half
-                    l=mid+1
+                    l=mid+1                     #find in right half
                 else:
-                    r=mid-1
+                    r=mid-1                     #find in left half  
         return -1
