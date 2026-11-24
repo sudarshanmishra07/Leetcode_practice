@@ -2,10 +2,10 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         stack = []
         for ch in s:
-            if ch.isalnum():
-                stack.append(ch.lower())
+            if ch.isalnum():                #check if character is alphanumeric
+                stack.append(ch.lower())    #store lowercase character
         for ch in s:
             if ch.isalnum():
-                if ch.lower() != stack.pop():
-                    return False
-        return True
+                if ch.lower() != stack.pop():   #compare with reversed character
+                    return False            #not a palindrome
+        return True                         #string is palindrome
